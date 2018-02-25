@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: my-application
+  cloud:
+    vault:
+      token: cae52d3d-f61f-9359-5fce-d696be73f03b
+      scheme: http
+server:
+  port: 8081
+  ssl:
+    key-store: classpath:server-keystore.jks
+    key-store-password: changeit
+    key-alias: secure-server
+    key-password: changeit
+    enabled: true
+
